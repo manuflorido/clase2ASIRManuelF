@@ -28,8 +28,8 @@ $hora = date("H");
     }
 
 $segundos = date("s");
-    echo "Ejercicio ejemplo ELSEIF" . "<br>";
-    echo "$segundos" . "<br>";
+  echo "Ejercicio ejemplo ELSEIF" . "<br>";
+  echo "$segundos" . "<br>";
       if($segundos<=10){
          echo "Primeros 10 segundos" . "<br>";
       }elseif($segundos>=50) {
@@ -38,7 +38,26 @@ $segundos = date("s");
          echo "Segundos intermedios" . "<br>";
       }
 
-    
+echo "<br>" . "<br>" . "Ejercicio ejemplo switch" . "<br>";
+$colores = "verde";
+switch ($colores) {
+    case 'Rojo':
+        echo "La sangre es de color: " . "$colores" . "<br>";
+        break;
+
+    case 'Verde':
+        echo "La hierba es de color: " . "$colores" . "<br>";
+        break;
+
+    case 'Azul':
+        echo "Mi color favorito es el: " . "$colores" . "<br>";
+        break;
+            
+    default:
+        echo "No tengo el color " . "$colores" . " en la base de datos";
+        break;
+}
+
 ?>
 
 </body>
