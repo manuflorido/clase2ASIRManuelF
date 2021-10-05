@@ -13,19 +13,27 @@
             margin-right: auto;
             border-collapse: collapse;
         }
+        p {
+            text-align: center;
+            font-size: 22px;
+            background-color: #9b807a;
+            color: white;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>
     <?php
         #Variable dia 0=Domingo 6=Sabado
         $dia = date("w");
-
         $hora = date("G");
         $minuto = date("i");
 
         switch ($dia) {
             case '1':
-                echo "Hoy es Lunes " . date("j") . " de " . date("F") . " del " . date("Y") . "<br>";
+                echo "Hoy es Lunes " . date("j") . " de " . date("F") . " del " . date("Y") . " y son las " . "$hora" . ":" . "$minuto" . "<br>";
                 echo "
                 <table>
                     <caption>Tu horario es:</caption>
@@ -58,6 +66,30 @@
                         <td>Servicios de Redes e Internet</td>
                     </tr>
                 </table>";
+                if ($hora==8) {
+                    echo "<p>Estás dando Aplicaciones Web</p>";
+                }
+                elseif ($hora==9) {
+                    echo "<p>Estás dando Aplicaciones Web</p>";
+                }
+                elseif ($hora==10) {
+                    echo "<p>Estás dando Aplicaciones Web</p>";
+                }
+                elseif ($hora==11) {
+                    echo "<p>Estás en el Recreo</p>";
+                }
+                elseif ($hora==12) {
+                    echo "<p>Estás dando Servicios de Redes e Internet</p>";
+                }
+                elseif ($hora==13) {
+                    echo "<p>Estás dando Servicios de Redes e Internet</p>";
+                }
+                elseif ($hora==14) {
+                    echo "<p>Estás dando Servicios de Redes e Internet</p>";
+                }
+                else {
+                    echo "<p>Escuchame que tienes que estar en tu casa</p>";
+                }
                 break;
 
                 case '2':
@@ -94,10 +126,34 @@
                             <td>Empresa e Iniciativa Emprendedora</td>
                         </tr>
                     </table>";
+                    if ($hora==8) {
+                        echo "<p>Estás dando Administración de Sistemas Operativos</p>";
+                    }
+                    elseif ($hora==9) {
+                        echo "<p>Estás dando Administración de Sistemas Operativos</p>";
+                    }
+                    elseif ($hora==10) {
+                        echo "<p>Estás dando Administración de Sistemas Operativos</p>";
+                    }
+                    elseif ($hora==11) {
+                        echo "<p>Estás en el Recreo</p>";
+                    }
+                    elseif ($hora==12) {
+                        echo "<p>Estás dando Seguridad Informática</p>";
+                    }
+                    elseif ($hora==13) {
+                        echo "<p>Estás dando Empresa e Iniciativa Emprendedora</p>";
+                    }
+                    elseif ($hora==14) {
+                        echo "<p>Estás dando Empresa e Iniciativa Emprendedora</p>";
+                    }
+                    else {
+                        echo "<p>Escuchame que tienes que estar en tu casa</p>";
+                    }
                     break;
 
                     case '3':
-                        echo "Hoy es Miércoles " . date("j") . " de " . date("F") . " del " . date("Y") . "<br>";
+                        echo "Hoy es Miércoles " . date("j") . " de " . date("F") . " del " . date("Y") . " y son las " . "$hora" . ":" . "$minuto" . "<br>";
                         echo "
                         <table>
                             <caption>Tu horario es:</caption>
@@ -130,10 +186,34 @@
                                 <td>Servicios de Redes e Internet</td>
                             </tr>
                         </table>";
+                        if ($hora==8) {
+                            echo "<p>Estás dando Administración de Sistemas Operativos</p>";
+                        }
+                        elseif ($hora==9) {
+                            echo "<p>Estás dando Administración de Sistemas Operativos</p>";
+                        }
+                        elseif ($hora==10) {
+                            echo "<p>Estás dando Administración de Sistemas Operativos</p>";
+                        }
+                        elseif ($hora==11) {
+                            echo "<p>Estás en el Recreo</p>";
+                        }
+                        elseif ($hora==12) {
+                            echo "<p>Estás dando Servicios de Redes e Internet</p>";
+                        }
+                        elseif ($hora==13) {
+                            echo "<p>Estás dando Servicios de Redes e Internet</p>";
+                        }
+                        elseif ($hora==14) {
+                            echo "<p>Estás dando Servicios de Redes e Internet</p>";
+                        }
+                        else {
+                            echo "<p>Escuchame que tienes que estar en tu casa</p>";
+                        }
                         break;
 
                         case '4':
-                            echo "Hoy es Jueves " . date("j") . " de " . date("F") . " del " . date("Y") . "<br>";
+                            echo "Hoy es Jueves " . date("j") . " de " . date("F") . " del " . date("Y") . " y son las " . "$hora" . ":" . "$minuto" . "<br>";
                             echo "
                             <table>
                                 <caption>Tu horario es:</caption>
@@ -166,10 +246,34 @@
                                     <td>Inglés</td>
                                 </tr>
                             </table>";
+                            if ($hora==8) {
+                                echo "<p>Estás dando Base de Datos</p>";
+                            }
+                            elseif ($hora==9) {
+                                echo "<p>Estás dando Base de Datos</p>";
+                            }
+                            elseif ($hora==10) {
+                                echo "<p>Estás dando Base de Datos</p>";
+                            }
+                            elseif ($hora==11) {
+                                echo "<p>Estás en el Recreo</p>";
+                            }
+                            elseif ($hora==12) {
+                                echo "<p>Estás dando Seguridad Informática</p>";
+                            }
+                            elseif ($hora==13) {
+                                echo "<p>Estás dando Inglés</p>";
+                            }
+                            elseif ($hora==14) {
+                                echo "<p>Estás dando Inglés</p>";
+                            }
+                            else {
+                                echo "<p>Escuchame que tienes que estar en tu casa</p>";
+                            }
                             break;
 
                             case '5':
-                                echo "Hoy es Viernes " . date("j") . " de " . date("F") . " del " . date("Y") . "<br>";
+                                echo "Hoy es Viernes " . date("j") . " de " . date("F") . " del " . date("Y") . " y son las " . "$hora" . ":" . "$minuto" . "<br>";
                                 echo "
                                 <table>
                                     <caption>Tu horario es:</caption>
@@ -202,14 +306,38 @@
                                         <td>Empresa e Iniciativa Emprendedora</td>
                                     </tr>
                                 </table>";
+                                if ($hora==8) {
+                                    echo "<p>Estás dando Inglés</p>";
+                                }
+                                elseif ($hora==9) {
+                                    echo "<p>Estás dando Seguridad Informática</p>";
+                                }
+                                elseif ($hora==10) {
+                                    echo "<p>Estás dando Seguridad Informática</p>";
+                                }
+                                elseif ($hora==11) {
+                                    echo "<p>Estás en el Recreo</p>";
+                                }
+                                elseif ($hora==12) {
+                                    echo "<p>Estás dando Aplicaciones Web</p>";
+                                }
+                                elseif ($hora==13) {
+                                    echo "<p>Estás dando Empresa e Iniciativa Emprendedora</p>";
+                                }
+                                elseif ($hora==14) {
+                                    echo "<p>Estás dando Empresa e Iniciativa Emprendedora</p>";
+                                }
+                                else {
+                                    echo "<p>Escuchame que tienes que estar en tu casa</p>";
+                                }
                                 break;
 
                                 case '6':
-                                    echo "Hermano que es sábado, sal por ahí o algo";
+                                    echo "<p>Hermano que es sábado, sal por ahí o algo</p>";
                                     break;
             
             default:
-            echo "Es el día del Señor, hoy toca dormir mucho que mañana hay clase";
+            echo "<p>Es el día del Señor, hoy toca dormir mucho que mañana hay clase</p>";
                 break;
         }
     ?>
