@@ -30,6 +30,7 @@
         $dia = date("w");
         $hora = date("G");
         $minuto = date("i");
+        $horaentera = date("G:i");
 
         switch ($dia) {
             case '1':
@@ -66,25 +67,13 @@
                         <td>Servicios de Redes e Internet</td>
                     </tr>
                 </table>";
-                if ($hora==8) {
+                if (('8:15'>=$horaentera) | ($horaentera<'11:15')) {
                     echo "<p>Estás dando Aplicaciones Web</p>";
                 }
-                elseif ($hora==9) {
-                    echo "<p>Estás dando Aplicaciones Web</p>";
-                }
-                elseif ($hora==10) {
-                    echo "<p>Estás dando Aplicaciones Web</p>";
-                }
-                elseif ($hora==11) {
+                elseif (('11:15'>=$horaentera) | ($horaentera<'11:45')) {
                     echo "<p>Estás en el Recreo</p>";
                 }
-                elseif ($hora==12) {
-                    echo "<p>Estás dando Servicios de Redes e Internet</p>";
-                }
-                elseif ($hora==13) {
-                    echo "<p>Estás dando Servicios de Redes e Internet</p>";
-                }
-                elseif ($hora==14) {
+                elseif (('11:45'>=$horaentera) | ($horaentera<'14:45')) {
                     echo "<p>Estás dando Servicios de Redes e Internet</p>";
                 }
                 else {
@@ -126,25 +115,16 @@
                             <td>Empresa e Iniciativa Emprendedora</td>
                         </tr>
                     </table>";
-                    if ($hora==8) {
+                    if (('08:15'>=$horaentera) | ($horaentera<'11:15')) {
                         echo "<p>Estás dando Administración de Sistemas Operativos</p>";
                     }
-                    elseif ($hora==9) {
-                        echo "<p>Estás dando Administración de Sistemas Operativos</p>";
-                    }
-                    elseif ($hora==10) {
-                        echo "<p>Estás dando Administración de Sistemas Operativos</p>";
-                    }
-                    elseif ($hora==11) {
+                    elseif (('11:15'>=$horaentera) | ($horaentera<'11:45')) {
                         echo "<p>Estás en el Recreo</p>";
                     }
-                    elseif ($hora==12) {
+                    elseif (('11:45'>=$horaentera) | ($horaentera<'12:45')) {
                         echo "<p>Estás dando Seguridad Informática</p>";
                     }
-                    elseif ($hora==13) {
-                        echo "<p>Estás dando Empresa e Iniciativa Emprendedora</p>";
-                    }
-                    elseif ($hora==14) {
+                    elseif (('12:45'>=$horaentera) | ($horaentera<'14:45')) {
                         echo "<p>Estás dando Empresa e Iniciativa Emprendedora</p>";
                     }
                     else {
@@ -186,25 +166,13 @@
                                 <td>Servicios de Redes e Internet</td>
                             </tr>
                         </table>";
-                        if ($hora==8) {
+                        if (('8:15'>=$horaentera) | ($horaentera<'11:15')) {
                             echo "<p>Estás dando Administración de Sistemas Operativos</p>";
                         }
-                        elseif ($hora==9) {
-                            echo "<p>Estás dando Administración de Sistemas Operativos</p>";
-                        }
-                        elseif ($hora==10) {
-                            echo "<p>Estás dando Administración de Sistemas Operativos</p>";
-                        }
-                        elseif ($hora==11) {
+                        elseif (('11:15'>=$horaentera) | ($horaentera<'11:45')) {
                             echo "<p>Estás en el Recreo</p>";
                         }
-                        elseif ($hora==12) {
-                            echo "<p>Estás dando Servicios de Redes e Internet</p>";
-                        }
-                        elseif ($hora==13) {
-                            echo "<p>Estás dando Servicios de Redes e Internet</p>";
-                        }
-                        elseif ($hora==14) {
+                        elseif (('11:45'>=$horaentera) | ($horaentera<'14:45')) {
                             echo "<p>Estás dando Servicios de Redes e Internet</p>";
                         }
                         else {
@@ -246,25 +214,16 @@
                                     <td>Inglés</td>
                                 </tr>
                             </table>";
-                            if ($hora==8) {
+                            if (('8:15'>=$horaentera) | ($horaentera<'11:15')) {
                                 echo "<p>Estás dando Base de Datos</p>";
                             }
-                            elseif ($hora==9) {
-                                echo "<p>Estás dando Base de Datos</p>";
-                            }
-                            elseif ($hora==10) {
-                                echo "<p>Estás dando Base de Datos</p>";
-                            }
-                            elseif ($hora==11) {
+                            elseif (('11:15'>=$horaentera) | ($horaentera<'11:45')) {
                                 echo "<p>Estás en el Recreo</p>";
                             }
-                            elseif ($hora==12) {
+                            elseif (('11:45'>=$horaentera) | ($horaentera<'12:45')) {
                                 echo "<p>Estás dando Seguridad Informática</p>";
                             }
-                            elseif ($hora==13) {
-                                echo "<p>Estás dando Inglés</p>";
-                            }
-                            elseif ($hora==14) {
+                            elseif (('12:45'>=$horaentera) | ($horaentera<'14:45')) {
                                 echo "<p>Estás dando Inglés</p>";
                             }
                             else {
@@ -306,25 +265,19 @@
                                         <td>Empresa e Iniciativa Emprendedora</td>
                                     </tr>
                                 </table>";
-                                if ($hora==8) {
+                                if (('8:15'>=$horaentera) | ($horaentera<'9:15')) {
                                     echo "<p>Estás dando Inglés</p>";
                                 }
-                                elseif ($hora==9) {
+                                elseif (('9:15'>=$horaentera) | ($horaentera<'11:15')) {
                                     echo "<p>Estás dando Seguridad Informática</p>";
                                 }
-                                elseif ($hora==10) {
-                                    echo "<p>Estás dando Seguridad Informática</p>";
-                                }
-                                elseif ($hora==11) {
+                                elseif (('11:15'>=$horaentera) | ($horaentera<'11:45')) {
                                     echo "<p>Estás en el Recreo</p>";
                                 }
-                                elseif ($hora==12) {
+                                elseif (('11:45'>=$horaentera) | ($horaentera<'12:45')) {
                                     echo "<p>Estás dando Aplicaciones Web</p>";
                                 }
-                                elseif ($hora==13) {
-                                    echo "<p>Estás dando Empresa e Iniciativa Emprendedora</p>";
-                                }
-                                elseif ($hora==14) {
+                                elseif (('12:45'>=$horaentera) | ($horaentera<'14:45')) {
                                     echo "<p>Estás dando Empresa e Iniciativa Emprendedora</p>";
                                 }
                                 else {
