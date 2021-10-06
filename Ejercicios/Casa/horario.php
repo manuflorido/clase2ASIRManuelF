@@ -67,7 +67,7 @@
                         <td>Servicios de Redes e Internet</td>
                     </tr>
                 </table>";
-                if (('8:15'>=$horaentera) | ($horaentera<'11:15')) {
+                if (('08:15'>=$horaentera) | ($horaentera<'11:15')) {
                     echo "<p>Estás dando Aplicaciones Web</p>";
                 }
                 elseif (('11:15'>=$horaentera) | ($horaentera<'11:45')) {
@@ -166,7 +166,7 @@
                                 <td>Servicios de Redes e Internet</td>
                             </tr>
                         </table>";
-                        if (('8:15'>=$horaentera) | ($horaentera<'11:15')) {
+                        if (('08:15'>=$horaentera) | ($horaentera<'11:15')) {
                             echo "<p>Estás dando Administración de Sistemas Operativos</p>";
                         }
                         elseif (('11:15'>=$horaentera) | ($horaentera<'11:45')) {
@@ -214,7 +214,7 @@
                                     <td>Inglés</td>
                                 </tr>
                             </table>";
-                            if (('8:15'>=$horaentera) | ($horaentera<'11:15')) {
+                            if (('08:15'>=$horaentera) | ($horaentera<'11:15')) {
                                 echo "<p>Estás dando Base de Datos</p>";
                             }
                             elseif (('11:15'>=$horaentera) | ($horaentera<'11:45')) {
@@ -265,10 +265,10 @@
                                         <td>Empresa e Iniciativa Emprendedora</td>
                                     </tr>
                                 </table>";
-                                if (('8:15'>=$horaentera) | ($horaentera<'9:15')) {
+                                if (('08:15'>=$horaentera) | ($horaentera<'09:15')) {
                                     echo "<p>Estás dando Inglés</p>";
                                 }
-                                elseif (('9:15'>=$horaentera) | ($horaentera<'11:15')) {
+                                elseif (('09:15'>=$horaentera) | ($horaentera<'11:15')) {
                                     echo "<p>Estás dando Seguridad Informática</p>";
                                 }
                                 elseif (('11:15'>=$horaentera) | ($horaentera<'11:45')) {
