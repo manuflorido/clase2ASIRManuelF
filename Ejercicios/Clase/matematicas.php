@@ -11,9 +11,10 @@
     echo "Ejemplo de bucle WHILE" . "<br>";
     $numero = 0;
     while ($numero <= 10) {
-        echo "Contador: " . "$numero"
-        $numero++
+        echo "Contador: " . "$numero" . "<br>";
+        $numero++;
     }
+    echo "La cuenta ha finalizado";
 ?>
 </body>
 </html>

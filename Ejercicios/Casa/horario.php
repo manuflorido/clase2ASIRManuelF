@@ -30,7 +30,7 @@
         $dia = date("w");
         $hora = date("G");
         $minuto = date("i");
-        $horaentera = date("G:i");
+        $horaentera = date("H:i");
 
         switch ($dia) {
             case '1':
