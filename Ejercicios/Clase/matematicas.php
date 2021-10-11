@@ -18,13 +18,61 @@
 
     echo "Ejemplo 2 de bucle WHILE" . "<br>";
     $numero1 = 0;
-    $aleatorio = rand(0,100);
+    $aleatorio = rand(0,20);
     echo "Número aleatorio: " . "$aleatorio" . "<br>";
     while ($numero1 <= $aleatorio) {
         echo "Contador: " . "$numero1" . "<br>";
         $numero1++;
     }
-    echo "La cuenta ha finalizado";
+    echo "La cuenta ha finalizado" . "<br>" . "<br>";
+
+    echo "Ejemplo bucle FOR" . "<br>";
+    for ($cuenta=0; $cuenta <= 10; $cuenta++) { 
+        echo "Contador:" . "$cuenta" . "<br>";
+    }
+    echo "<br>";
+
+
+    #Definimos una variable que sean boolean
+    $esMayor=true;
+
+    function persona($nombre, $edad){
+        echo "Su nombre es: " . $nombre . "<br>";
+
+        if ($edad%2==0) {
+            echo "Su edad es par" . "<br>";
+        }
+        else {
+            echo "Su edad es impar" . "<br>";
+        }
+    }
+    echo "Ejemplo de funciones" . "<br>";
+    persona("Manuel", 21);
+    echo "<br>";
+
+    echo "Ejemplo ARRAY" . "<br>";
+    $alumnos = array("Manule", "Javi", "ErCapiDeAeronáutica");
+    echo "Hay " . count($alumnos) . " alumnos" . "<br>";
+
+    $selectAleatorio = rand(0,2);
+    echo "El alumno es: " . $alumnos[$selectAleatorio] . "<br>" . "<br>";
+
+
+    echo "Ejemplo IS_INT" . "<br>";
+    function esNumero($number){
+        if (is_int($number)) {
+            echo "Es un número entero";
+        } else {
+            echo "No es un número";
+        }
+        
+    }
+
+    esNumero("hola");
+
+
+
+
 ?>
 </body>
 </html>
