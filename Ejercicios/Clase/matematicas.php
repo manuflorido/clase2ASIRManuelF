@@ -46,7 +46,7 @@
             echo "Su edad es impar" . "<br>";
         }
     }
-    echo "Ejemplo de funciones" . "<br>";
+    echo "Ejemplo de FUNCIONES" . "<br>";
     persona("Manuel", 21);
     echo "<br>";
 
