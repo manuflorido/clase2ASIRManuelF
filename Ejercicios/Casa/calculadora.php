@@ -69,8 +69,8 @@
             echo $res . "<br>";   
         }
 
-        $prueba=2;
-        $prueba2=10;
+        $prueba=10;
+        $prueba2=2;
         suma($prueba,$prueba2);
         resta($prueba,$prueba2);
         mult($prueba,$prueba2);
