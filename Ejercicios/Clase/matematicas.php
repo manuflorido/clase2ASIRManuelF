@@ -61,17 +61,23 @@
     echo "Ejemplo IS_INT" . "<br>";
     function esNumero($number){
         if (is_int($number)) {
-            echo "Es un número entero";
+            echo "Es un número entero" . "<br>" . "<br>";
         } else {
-            echo "No es un número";
+            echo "No es un número" . "<br>" . "<br>";
         }
         
     }
 
     esNumero("hola");
 
+    #Funcion Preséntate
+    function suma($num1, $num2){
+        $res=$num1 + $num2;
+     echo "El resultado es: " . $res . "<br>";   
+    }
 
-
+    suma(1,2);
+    suma(3,4);
 
 ?>
 </body>

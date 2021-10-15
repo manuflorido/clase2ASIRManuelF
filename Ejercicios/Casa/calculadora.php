@@ -33,9 +33,41 @@
             <label><input type="submit" name="resolver" value="Resolver" /></label>
             <label><input type="reset" name="reset" /></label>
         </fieldset><br>
-        
-        
     </form>
     <h2>Resultado: </h2>
+
+    <?php
+        #Función Suma
+        function suma($num1, $num2){
+            $res=$num1 + $num2;
+            echo $res;   
+        }
+        #Función Resta
+        function resta($num1, $num2){
+            if ($num2 > $num1) {
+                $res=$num2-$num1;
+                echo $res;
+            }
+            else {
+                $res=$num1 + $num2;
+                echo $res;  
+            }
+        }
+        #Función Multiplicación
+        function mult($num1, $num2){
+            $res=$num1 * $num2;
+            echo $res;   
+        }
+        #Función División
+        function div($num1, $num2){
+            $res=$num1 / $num2;
+            echo $res;   
+        }
+        #Función Resto
+        function resto($num1, $num2){
+            $res=$num1 % $num2;
+            echo $res;   
+        }
+    ?>
 </body>
 </html>
