@@ -39,35 +39,43 @@
     <?php
         #Función Suma
         function suma($num1, $num2){
-            $res=$num1 + $num2;
-            echo $res;   
+            $res=$num1+$num2;
+            echo $res . "<br>";   
         }
         #Función Resta
         function resta($num1, $num2){
             if ($num2 > $num1) {
                 $res=$num2-$num1;
-                echo $res;
+                echo $res . "<br>";
             }
             else {
-                $res=$num1 + $num2;
-                echo $res;  
+                $res=$num1-$num2;
+                echo $res . "<br>";  
             }
         }
         #Función Multiplicación
         function mult($num1, $num2){
-            $res=$num1 * $num2;
-            echo $res;   
+            $res=$num1*$num2;
+            echo $res . "<br>";   
         }
         #Función División
         function div($num1, $num2){
-            $res=$num1 / $num2;
-            echo $res;   
+            $res=$num1/$num2;
+            echo $res . "<br>";   
         }
         #Función Resto
         function resto($num1, $num2){
-            $res=$num1 % $num2;
-            echo $res;   
+            $res=$num1%$num2;
+            echo $res . "<br>";   
         }
+
+        $prueba=2;
+        $prueba2=10;
+        suma($prueba,$prueba2);
+        resta($prueba,$prueba2);
+        mult($prueba,$prueba2);
+        div($prueba,$prueba2);
+        resto($prueba,$prueba2);
     ?>
 </body>
 </html>
