@@ -29,22 +29,35 @@
         <legend>Calculadora</legend><br>
             <label>Número → </label><input type="text" name="num1" />
             <label>Número → </label><input type="text" name="num2" /><br><br>
-            <label>Operaciones:<br><br>
+            <label>Elige una operación:</label>
+                <select name="operaciones">
+                    <option value="suma">Suma</option>
+                    <option value="resta">Resta</option>
+                    <option value="multiplicacion">Multiplicación</option>
+                    <option value="division">División</option>
+                    <option value="exponente">Elevar a cualquier exponente</option>
+            </select>
+            <!--<label>Operaciones:<br><br>
                                  <input class="inputoperacion" type="button" name="suma" value="+"/>
                                  <input class="inputoperacion" type="button" name="resta" value="-"/>
                                  <input class="inputoperacion" type="button" name="mult" value="*"/>
                                  <input class="inputoperacion" type="button" name="div" value="/"/>
                                  <input class="inputoperacion" type="button" name="resto" value="%"/>
-            </label><br><br>
+            </label>
+            -->
+            <br><br>
             <label>Raíz cuadrada → </label><input type="text" name="numraiz" />
             <label>Elevar al cuadrado → </label><input type="text" name="numcuadrado" />
             <label>Elevar al cubo → </label><input type="text" name="numcubo" />
             <label>Fibonacci → </label><input type="text" name="numfibo" /><br><br>
-            <label>Elevar a cualquier exponente:</label><br><br>
+            <!--<label>Elevar a cualquier exponente:</label><br><br>
             <label>Base → </label><input type="text" name="numbase" />
             <label>Exponente → </label><input type="text" name="numexpo" /><br><br>
             <label><input type="submit" name="resolver" value="Resolver" /></label>
             <label><input type="reset" name="reset"  value="Reset"/></label>
+            -->
+
+
         </fieldset><br>
     </form>
     <h2>Resultado: </h2>
