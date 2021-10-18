@@ -24,12 +24,12 @@
     </style>
 </head>
 <body>
-    <form id="formulario_calculadora">
+    <form id="formulario_calculadora" method="GET">
         <fieldset>
         <legend>Calculadora</legend><br>
             <label>Número → </label><input type="text" name="num1" />
             <label>Número → </label><input type="text" name="num2" /><br><br>
-            <label>Operación:<br><br>
+            <label>Operaciones:<br><br>
                                  <input class="inputoperacion" type="button" name="suma" value="+"/>
                                  <input class="inputoperacion" type="button" name="resta" value="-"/>
                                  <input class="inputoperacion" type="button" name="mult" value="*"/>
@@ -40,6 +40,7 @@
             <label>Elevar al cuadrado → </label><input type="text" name="numcuadrado" />
             <label>Elevar al cubo → </label><input type="text" name="numcubo" />
             <label>Fibonacci → </label><input type="text" name="numfibo" /><br><br>
+            <label>Elevar a cualquier exponente:</label><br><br>
             <label>Base → </label><input type="text" name="numbase" />
             <label>Exponente → </label><input type="text" name="numexpo" /><br><br>
             <label><input type="submit" name="resolver" value="Resolver" /></label>
@@ -49,6 +50,8 @@
     <h2>Resultado: </h2>
 
     <?php
+        $num1=$_GET["num1"];
+        $num2=$_GET["num2"];
         #Función Suma
         function suma($num1, $num2){
             $res=$num1+$num2;
@@ -81,32 +84,37 @@
             echo $res . "<br>";   
         }
         #Función Raiz Cuadrada
-        function raiz($num1){
-            $res=sqrt($num1);
+        $num3=$_GET["numraiz"];
+        function raiz($num3){
+            $res=sqrt($num3);
             echo $res . "<br>";
         }
-
         #Función Elevar al Cuadrado
-        function cuadrado($num1){ 
-            $res=$num1*$num1;
+        $num4=$_GET["numcuadrado"];
+        function cuadrado($num4){ 
+            $res=$num4*$num4;
             echo $res . "<br>";
         }
         #Función Elevar al Cubo
-        function cubo($num1){ 
-            $res=$num1*$num1*$num1;
+        $num5=$_GET["numcubo"];
+        function cubo($num5){ 
+            $res=$num5*$num5*$num5;
             echo $res . "<br>";
         }
         #Elevar a cualquier Exponente
-        function exponente($num1, $num2){
-            $res=pow($num1,$num2);
+        $num6=$_GET["numbase"];
+        $num7=$_GET["numexpo"];
+        function exponente($num6, $num7){
+            $res=pow($num6,$num7);
             echo $res . "<br>";
         }
         #Fibonacci
-        function fibo($num1){
+        $num3=$_GET["numfibo"];
+        function fibo($num8){
             $n=0;
             $n1=1;
             $n2=0;
-            while ($num1>0) {
+            while ($num8>0) {
                 $n2=$n1+$n;
                 $n1=$n;
                 $n=$n2;
@@ -114,18 +122,7 @@
                 echo $n2 . " ";
         }
         }
-        $prueba=8;
-        $prueba2=3;
-        suma($prueba,$prueba2);
-        resta($prueba,$prueba2);
-        mult($prueba,$prueba2);
-        div($prueba,$prueba2);
-        resto($prueba,$prueba2);
-        raiz($prueba2);
-        cuadrado($prueba);
-        cubo($prueba);
-        exponente($prueba,$prueba2);
-        fibo($prueba);
+
     ?>
 </body>
 </html>
