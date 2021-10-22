@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora en PHP Manuel Florido</title>
+    <style>
+        form{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        .inputoperacion{
+            width: 5%;
+        }
+        input{
+            width: 6%;
+        }
+        .clase{
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <form id="formulario_calculadora" method="post" action="calculadora.php" target="_blank">
+        <fieldset>
+        <legend>Calculadora</legend><br>
+
+            <label>Número → </label><input type="text" name="num1" value="0"/>
+            <label>Número → </label><input type="text" name="num2" value="0"/>
+            <br><br>
+
+            <label>Elige una operación:</label>
+                <select name="operacion">
+                    <option value="suma">Suma</option>
+                    <option value="resta">Resta</option>
+                    <option value="multiplicacion">Multiplicación</option>
+                    <option value="division">División</option>
+                    <option value="resto">Resto</option>
+                    <option value="exponente">Elevar a cualquier exponente</option>
+                </select>
+
+            <br><br>
+
+            <label><input class="clase" type="submit" name="resolver" value="Resolver" /></label>
+            <label><input class="clase" type="reset" name="reset"  value="Reset"/></label>
+            
+
+
+        </fieldset><br>
+    </form>
+</body>
+</html>
