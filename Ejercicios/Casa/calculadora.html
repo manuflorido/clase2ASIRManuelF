@@ -12,6 +12,10 @@
             margin-right: auto;
             text-align: center;
         }
+        fieldset{
+            border-color: #a2ff9a;
+            border-width: 4px;
+        }
         h2 {
             text-align: center;
         } 
@@ -20,6 +24,17 @@
         }
         .clase{
             width: 80px;
+        }
+        #reset{
+            background-color: red;
+            color: white;
+        }
+        #resolv{
+            background-color: green;
+            color: white;
+        }
+        body{
+            background-color: #d6d4d4;
         }
     </style>
 </head>
@@ -45,8 +60,8 @@
                 </select>
             <br><br>
 
-            <label><input class="clase" type="submit" name="resolver" value="Resolver" /></label>
-            <label><input class="clase" type="reset" name="reset"  value="Reset"/></label>
+            <label><input class="clase" type="submit" name="resolver" value="Resolver" id="resolv"/></label>
+            <label><input class="clase" type="reset" name="reset"  value="Reset" id="reset"/></label>
             
 
 
