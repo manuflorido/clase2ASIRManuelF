@@ -25,7 +25,7 @@
     #Función búsqueda
     function busqueda($text1, $text2){
         $res=strpos($text1,$text2);
-          if ($res="True") {
+          if ($res==True) {
             echo "La palabra " . $text2 . " se encuentra en el texto";
         } else {
             echo "La palabra " . $text2 . " no se encuentra en el texto";
