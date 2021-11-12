@@ -116,6 +116,26 @@ $copiaCapitales["Andalucia"] = "Córdoba";
 print_r($copiaCapitales);
 echo "<br>";
 
+// CLASE 12 DE NOVIEMBRE
+$colores1 = ["Verde", "Azul", "Amarillo", "Rojo", "Negro"];
+$colores2 = ["Verde", "Azul", "Amarillo", "Rojo", "Blanco"];
+echo "<br>";
+
+$resultadoDiferencia= array_diff($colores2, $colores1);
+$resultadoUnion = array_merge($colores2, $colores1);
+$resultadoInterseccion = array_intersect($colores2, $colores1);
+//Oredenar array
+/*r*/sort($colores2);
+//Añadir elementos al final de un array
+array_push($colores2, "Púrpura", "Marrón", "Celeste");
+print_r($resultadoDiferencia);
+echo "<br>";
+print_r($resultadoUnion);
+echo "<br>";
+print_r($resultadoInterseccion);
+echo "<br>";
+print_r($colores2);
+echo "<br>";
 
 
 
