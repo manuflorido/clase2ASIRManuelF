@@ -124,7 +124,7 @@ echo "<br>";
 $resultadoDiferencia= array_diff($colores2, $colores1);
 $resultadoUnion = array_merge($colores2, $colores1);
 $resultadoInterseccion = array_intersect($colores2, $colores1);
-//Oredenar array
+//Ordenar array
 /*r*/sort($colores2);
 //Añadir elementos al final de un array
 array_push($colores2, "Púrpura", "Marrón", "Celeste");

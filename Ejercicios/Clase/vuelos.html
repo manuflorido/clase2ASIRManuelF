@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuelos Manuel Florido</title>
+    <style>
+        form{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        fieldset{
+            border-color: #a2ff9a;
+            border-width: 4px;
+        }
+        h2 {
+            text-align: center;
+        } 
+        input{
+            width: 8%;
+        }
+        .clase{
+            width: 80px;
+        }
+        #reset{
+            background-color: red;
+            color: white;
+        }
+        #enviar{
+            background-color: green;
+            color: white;
+        }
+        body{
+            background-color: #d6d4d4;
+        }
+        .fecha{
+            width: 12%;
+        }
+    </style>
+</head>
+<body>
+    <form id="vuelos" method="post" action="vuelos.php" target="_blank">
+        <fieldset>
+        <legend>Gestión de vuelos</legend><br>
+        <fieldset>
+        <legend>Vuelo 1</legend>
+            <label>Código → </label><input type="text" name="infovuelo1[cod1]" required placeholder="Escriba aquí"/>
+            <label>Ciudad Origen → </label><input type="text" name="infovuelo1[cO1]" required placeholder="Escriba aquí"/><br><br>
+            <label>Ciudad Destino → </label><input type="text" name="infovuelo1[cD1]" required placeholder="Escriba aquí"/>
+            <label>Precio → </label><input type="text" name="infovuelo1[precio1]" required placeholder="Escriba aquí"/>
+            <label>Fecha Salida → </label><input type="date" class="fecha" required name="infovuelo1[fecha1]" placeholder="Escriba aquí"/>
+
+        </fieldset>
+
+            <br><br>
+
+        <fieldset>
+        <legend>Vuelo 2</legend>
+            <label>Código → </label><input type="text" name="infovuelo2[cod2]" required placeholder="Escriba aquí"/>
+            <label>Ciudad Origen → </label><input type="text" name="infovuelo2[cO2]" required placeholder="Escriba aquí"/><br><br>
+            <label>Ciudad Destino → </label><input type="text" name="infovuelo2[cD2]" required placeholder="Escriba aquí"/>
+            <label>Precio → </label><input type="text" name="infovuelo2[precio2]" required placeholder="Escriba aquí"/>
+            <label>Fecha Salida → </label><input type="date" class="fecha" required name="infovuelo2[fecha2]" placeholder="Escriba aquí"/>
+        </fieldset>
+
+            <br><br>
+        <fieldset>
+
+        <legend>Herramientas</legend>
+                <label>Elija una operación:</label>
+                <select name="operacion">
+                    <option hidden selected>Selecciona una opción</option>
+                    <option value="uneV">Une vuelos</option>
+                    <option value="difV">Diferencia entre vuelos</option>
+                    <option value="sortV">Une vuelos y ordena</option>
+                    <option value="eqV">Información común</option>
+                </select>
+        </fieldset>
+
+            <br><br>
+
+        </fieldset><br>
+            <label><input class="clase" type="submit" name="enviar" value="Enviar" id="enviar"/></label>
+            <label><input class="clase" type="reset" name="reset"  value="Reset" id="reset"/></label>
+    </form>
+</body>
+</html>
