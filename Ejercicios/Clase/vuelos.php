@@ -49,7 +49,7 @@ function sortV ($vuelo1, $vuelo2){
     // sort($resOrdena);
     // print_r($resOrdena);
     $var = array_merge($vuelo1, $vuelo2);
-    sort($var);
+    ksort($var);
     print_r($var);
 }
 
