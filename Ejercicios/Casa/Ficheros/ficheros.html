@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficheros Manuel Florido</title>
+    <style>
+        form{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        fieldset{
+            border-color: #a2ff9a;
+            border-width: 4px;
+        }
+        h2 {
+            text-align: center;
+        } 
+        input{
+            width: 6%;
+        }
+        .clase{
+            width: 80px;
+        }
+        #reset{
+            background-color: red;
+            color: white;
+        }
+        #resolv{
+            background-color: green;
+            color: white;
+        }
+        body{
+            background-color: #d6d4d4;
+        }
+    </style>
+</head>
+<body>
+    <form id="formulario_ficheros" method="post" action="ficheros.php" target="_blank">
+        <fieldset>
+        <legend>Ficheros</legend><br>
+
+            <label>Texto a escribir</label><br><br>
+            <textarea name="text" placeholder="Escriba aquí" rows="4" cols="30"></textarea>
+            <br><br>
+
+            <label>Elige una operación:</label>
+                <select name="operacion">
+                    <option value="leer">Leer el archivo en la web</option>
+                    <option value="escribir">Escribir más información</option>
+                </select>
+            <br><br>
+
+            <label><input class="clase" type="submit" name="resolver" value="Enviar" id="resolv"/></label>
+            <label><input class="clase" type="reset" name="reset"  value="Reset" id="reset"/></label>
+            
+
+        </fieldset><br>
+    </form>
+</body>
+</html>
