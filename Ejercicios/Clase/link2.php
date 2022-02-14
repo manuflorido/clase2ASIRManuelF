@@ -21,7 +21,6 @@ echo "<p>";
 //sumciu incluye la ciudad más visitada y las que menos
 sumCiu($vueloDestino);
 echo "</p>";
-masVisit3($vueloDestino);
 
 echo"
 </body>

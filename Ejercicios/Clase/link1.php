@@ -34,10 +34,8 @@ echo "</p>";
 echo "<p>";
 minTot($vueloDuracion, $id);
 echo "</p>";
-//horTOt($vueloDuracion, $id);
-echo "<p>";
-mediaMinAvion($vueloDuracion,$id);
-echo "</p>";
+
+
 echo"
 <p><a href='link1.html'>Volver atrás</a></p>
 </body>
